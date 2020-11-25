@@ -14,12 +14,12 @@ public class weather extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
 
-        Button button = (Button) findViewById(R.id.back_btn);
-        button.setOnClickListener(new View.OnClickListener(){
+        Button back_button = (Button) findViewById(R.id.back_btn);
+        back_button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-//                startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
                 onBackPressed();
             }
         });
